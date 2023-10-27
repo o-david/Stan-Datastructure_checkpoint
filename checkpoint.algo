@@ -1,0 +1,32 @@
+ALGORITHM search array
+VAR
+    set 1 : ARRAY_OF INTEGER 
+    set 2 : ARRAY_OF INTEGER 
+    i : INTEGER
+BEGIN
+    set 1 := {3,1,7,9}
+    set 2 := {2,4,1,9,3}
+    //merge the two array
+    set 3 := [3,1,7,9,2,4,1,9,3]
+    FOR i FROM 0 TO set 3.lenght-1 STEP 1  DO
+        Read(tab[i])
+    END_FOR
+    Write ("search for the distinct numbers")
+    Read (elt) //if its only found once
+
+    i := 0;
+    IF ([i] = elt) THEN
+        BREAK; // element is found only once
+    END_IF
+    i := i+1 //update index
+    
+    IF (i <> elt) THEN //element is found more than one
+    END_IF
+
+    Write("sum of all the distinct numbars")
+    Read (int)
+
+    sum := i + i + i
+    Read := i
+END
+
